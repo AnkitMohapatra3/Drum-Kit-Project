@@ -54,6 +54,6 @@ function buttonAnimation(currentKey){
    var animationButton = document.querySelector("."+currentKey);
    animationButton.classList.add("pressed");
    setTimeout(function(){
-    animationButton.classList.toggle("pressed");
+    animationButton.classList.remove("pressed");
    },300);
 }
