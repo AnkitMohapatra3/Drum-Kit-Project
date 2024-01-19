@@ -3,10 +3,12 @@ for (var i = 0; i < len; i++) {
   document.querySelectorAll("button")[i].addEventListener("click", function () {
     var words = this.innerHTML;
     makeNoise(words);
+    buttonAnimation(words);
   });
 }
 document.addEventListener("keydown",function(event){
     makeNoise(event.key);
+    buttonAnimation(event.key);
 })
 function makeNoise(key){
     switch (key) {
@@ -47,4 +49,11 @@ function makeNoise(key){
       default:
         console.log(words);
     }
+}
+function buttonAnimation(currentKey){
+   var animationButton = document.querySelector("."+currentKey);
+   animationButton.classList.add("pressed");
+   setTimeout(function(){
+    animationButton.classList.toggle("pressed");
+   },300);
 }
