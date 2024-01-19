@@ -14,7 +14,8 @@ The project consists of three main files:
 
 ## How to Use
 
-To play the drum kit, you can either click on the drum images or press the corresponding keys on your keyboard. The keys are as follows:
+To play the drum kit, you can either click on the drum images or press the corresponding keys on your keyboard.
+The keys are as follows:
 
 - 'w': tom-1 sound
 - 'a': tom-2 sound
